@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fillViewport="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <ImageView
+            android:id="@+id/idIVCaptureImage"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:text="Image will be visible here"
+            android:textColor="@color/yellow" />
+
+        <TextView
+            android:id="@+id/idTVDetectText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVCaptureImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+        <!-- <TextView
+             android:id="@+id/textView1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Detected Water level Value is 2m"
+             android:textSize="20dp"
+             android:textAlignment="center"
+             android:textColorHint="@color/black"
+             android:layout_below="@+id/idIVCaptureImage"/>
+ -->
+        <TextView
+            android:id="@+id/manualWV"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVDetectText"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="100dp"
+            android:hint="Enter Water Level"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/manualWaterValue"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/idTVDetectText"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="100dp"
+            android:inputType="numberDecimal"
+            android:background="@color/yellow"
+            android:hint=""
+            android:padding="10dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/idTVDetectText"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="18dp"
+            android:hint="m"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/idBtnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idBtnLoggedOut"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_back"
+            android:textColorHint="@color/white"
+            android:text="Camera"
+            android:textAllCaps="false"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/idBtnChooseImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idBtnCamera"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_back"
+            android:textColorHint="@color/white"
+            android:text="Choose Image"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            />
+
+        <Button
+            android:id="@+id/idBtnDetect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idBtnChooseImg"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_back"
+            android:textColorHint="@color/white"
+            android:text="Detect Water Level"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            />
+
+        <Button
+            android:id="@+id/idBtnLoggedOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manualWaterValue"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_back"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            tools:ignore="MissingConstraints"
+            />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idBtnDetect"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_back"
+            android:hint="Submit"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

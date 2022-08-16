@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "458986838955",
+    "project_id": "jomisowaterlevel-7cd9f",
+    "storage_bucket": "jomisowaterlevel-7cd9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458986838955:android:5bdc03fb0c99bcd39290ee",
+        "android_client_info": {
+          "package_name": "com.example.jomisowaterlevel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458986838955-g66el3rert6pfi26lqtcm0e9f4qgis9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKalQxrAgecXS9XSAnQUjmfSwpWmQfaRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458986838955-g66el3rert6pfi26lqtcm0e9f4qgis9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

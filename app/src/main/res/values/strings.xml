@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JomisoWaterLevel</string>
+    <string name="logout" />
+    <string-array name="array_agency">
+        <item>Select Your State Agency</item>
+        <item>WRD Uttarakhand</item>
+        <item>WRD Uttar Pradesh</item>
+    </string-array>
+</resources>
